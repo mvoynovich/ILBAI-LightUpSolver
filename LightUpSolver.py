@@ -104,7 +104,7 @@ class LightUpSolver:
             adjacent = []
             for di, dj in [(0, 1), (1, 0), (0, -1), (-1, 0)]:
                 ni, nj = i + di, j + dj
-                if 0 <= ni < self.rows and 0 <= nj < self.cols:
+                if 0 <= ni < self.rows and 0 <= nj < self.cols and self.grid[ni][nj] == -1:
                     adjacent.append((ni, nj))
             return adjacent
         
