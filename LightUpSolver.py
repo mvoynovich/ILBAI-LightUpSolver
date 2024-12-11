@@ -206,7 +206,7 @@ class LightUpSolver:
         # Requires that black cells cannot have a light placed on them
         for i in range(self.rows):
             for j in range(self.cols):
-                if self.grid[i][j] == -2 or self.grid[i][j] >= 0:
+                if self.grid[i][j] != -1:
                     # Light must be false (cannot be on the same location) at any location that has a black cell
                     solver.add(Not(self.lights[i][j]))
         
