@@ -43,16 +43,6 @@ class LightUpSolver:
         self.rows, self.cols = grid.shape
         self.lights = None
 
-<<<<<<< Updated upstream
-    def print_grid(self, lights=None, show_beams=False):
-        """
-        Prints the grid at different stages
-        lights: Optional solution grid showing light positions
-        show_beams: Whether to show the beam paths
-        """
-        rows, cols = self.grid.shape
-=======
-
 def print_grid(grid, lights=None, show_beams=False):
     """
     Prints the grid at different stages 
@@ -213,7 +203,6 @@ def solve_lightup(grid):
             for j in range(cols):
                 if is_true(model[lights[i][j]]):
                     solution[i][j] = 1
->>>>>>> Stashed changes
         
         # Set up display board
         display = []
