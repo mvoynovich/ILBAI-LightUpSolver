@@ -80,7 +80,7 @@ The txt file follows the following format:
       {},{},{},{},{},{},{}
       {},{},{},{},{},{},{}
 
-- A filled out example file below:
+A filled out example file below:
 
       seed: https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html#7x7b20s4d2%23951739128355234
       game_id: https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html#7x7:cBg2c01aBb1e1bBa01cBg0c
