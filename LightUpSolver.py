@@ -7,7 +7,34 @@ Modules we are using:
 Z3: We are using Z3 as our automated reasoner. 
     It handles all the logic behind the constraints and boolean expressions we set up
     
-Numpy: We are using numpy to     
+Numpy: We are using numpy to create our square test grids using arrays
+
+Time: We are just using this module to print the output in a prettier fashion and giving 
+      a sense of satisfaction to each step being completed.    
+"""
+
+"""
+General Rules/Info:
+  Rules to the lightup/akari game can be found here: 
+    https://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/lightup.html#lightup
+    
+  All test grids setup before hand are available to be tested here (using the seed and game id links provided in the txt files):
+    https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html 
+  
+  The grid is a 2D numpy array where:
+      -1 = white cell (empty)
+      -2 = black cell (no number)
+      0-4 = black cell with number indicating adjacent lights
+      
+  The printed output of the grid has symbols representing the following:
+      □ = white cell (empty)
+      ■ = Black cell (no number)
+      0-4 = black cell with number indicating adjacent lights
+      ★ = Light 
+      · = Light beam (representing the beams that come from the lights)
+      
+  
+
 """
 
 class LightUpSolver:
@@ -23,6 +50,15 @@ class LightUpSolver:
         show_beams: Whether to show the beam paths
         """
         rows, cols = self.grid.shape
+    """
+    Prints the grid at different stages 
+    (has different parameters to print it in different ways)
+    
+    lights: Parameter that stores the locations of lights in the solution grid
+    
+    show_beams: Optional parameter that allows for the display of beams of light
+                coming from the original lights
+    """
         
         # Set up display board
         display = []
