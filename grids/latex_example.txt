@@ -1,0 +1,8 @@
+seed: https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html#5x5b30s4d2%23412798920701415
+game_id: https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html#5x5:b1cBa2a1cBaBa2cBb
+
+-1, -1, 1, -1, -1 
+-1,  -2, -1,  2, -1 
+1, -1, -1, -1, -2 
+-1,  -2, -1,  2, -1 
+-1, -1, -2, -1, -1

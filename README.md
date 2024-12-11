@@ -47,9 +47,17 @@ Repository storing the code, write-up, and ReadME for our final project in Profe
       1 = there is a light at [i][j]
 
 ## How to setup
+
+#### WARNING: DO NOT install "z3" as this is a deprecated AWS package
+
 - This program was tested and run on miniconda 3 and python version 3.11.4 
 - It utilizes dowloaded modules of z3, numpy, os, and time
   - All required modules are either included with python or can be dowloaded by running the [installation.py](installation.py) file we have included
+
+Or if you are familiar with "pip" installing modules please run:
+```pip install z3-solver numpy```
+
+If you wish to uninstall these packages later, please run ```pip uninstall z3-solver numpy``` or just run [uninstall.py](uninstall.py)
 
 ## How to run
 1. To run this program, run main.py
@@ -62,6 +70,7 @@ In order to create yout own test cases, you can create a txt file in the [grids]
 
 The txt file follows the following format:   
 - For the array of {} fill in using the numbers from the [key for the grid array](#an-overview-of-some-important-variable-values)  provided above 
+- Feel free to add more rows or columns, just ensure that it is rectangular 
 - For the seed link, right click on link to puzzle by seed and copy
 - For the game id link, right click on link to puzzle by game ID and copy
 - Links for the seeds and game id can be found [here](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html)

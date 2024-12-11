@@ -66,7 +66,7 @@ def load_grid_from_file(filename):
         
         # Store the lines that contain the grid
         solver_link = lines[0][6:]
-        lines = lines[3:-1]
+        lines = lines[3:]
        
         for line in lines:
             # Convert each line to a list of integers
