@@ -67,6 +67,8 @@ The txt file follows the following format:
 - For the game id link, right click on link to puzzle by game ID and copy
 - Links for the seeds and game id can be found [here](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html)
 
+#### Disclaimer: It is recommended that you generate a custom-grid with your specifications on the website provided above, copy it using the format below and then press solve to verify with our programs output.
+
       seed: {insert seed link}
       game_id: {insert game id link}
 
