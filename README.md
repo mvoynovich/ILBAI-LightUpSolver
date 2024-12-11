@@ -4,14 +4,6 @@ Repository storing the code, write-up, and ReadME for our final project in Profe
 ## Purpose
 - This project serves to solve Professor Selmer's final project topic, John LBAI-Engineer
 
-## Division of work
-- Matthew Voynovich
-  - Worked on lightup Solver python script with the z3 package to create constraints and solve lightup. Worked on the initial code for the project and the README.
-- Rijul Verma
-  - Worked on main to read in the test files and created the installation script. Additionally switched lightup solver to object oriented so it could run from main. Lastly, worked on the write-up.
-- Ryan Benson
-  - Worked on creating test cases for the program, bug fixing, and the write-up. Fixed our biggest error in the adjacency counting non-lights too.
-
 ## Baseline rules for the game
 ### General Rules/Info:
   Rules to the lightup/akari game can be found here: 
