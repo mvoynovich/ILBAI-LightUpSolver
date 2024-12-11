@@ -1,5 +1,26 @@
 from LightUpSolver import *
 
+"""
+General Rules/Info:
+  Rules to the lightup/akari game can be found here: 
+    https://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/lightup.html#lightup
+
+  All test grids setup before hand are available to be tested here (using the seed and game id links provided in the txt files):
+    https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html 
+
+  The grid is a 2D numpy array where:
+      -1 = white cell (empty)
+      -2 = black cell (no number)
+      0-4 = black cell with number indicating adjacent lights
+
+  The printed output of the grid has symbols representing the following:
+      □ = white cell (empty)
+      ■ = Black cell (no number)
+      0-4 = black cell with number indicating adjacent lights
+      ★ = Light 
+      · = Light beam (representing the beams that come from the lights)
+"""
+
 def print_available_grids():
     """
     Prints all available grid files in the 'grids' folder and lets the user select one.
