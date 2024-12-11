@@ -5,7 +5,6 @@ import time
 """
 Modules we are using:
 Z3: We are using Z3 as our automated reasoner. 
-    It handles all the logic behind the constraints and boolean expressions we set up
     It handles all the logic behind the constraints and boolean expressions we set up.
     
 Numpy: We are using numpy to create our square test grids using arrays
