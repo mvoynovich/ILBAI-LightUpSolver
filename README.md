@@ -13,7 +13,7 @@ Repository storing the code, write-up, and ReadME for our final project in Profe
   - Worked on creating test cases for the program, bug fixing, and the write-up. Fixed our biggest error in the adjacency counting non-lights too.
 
 ## Baseline rules for the game
-General Rules/Info:
+### General Rules/Info:
   Rules to the lightup/akari game can be found here: 
     https://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/lightup.html#lightup
   
@@ -25,7 +25,7 @@ General Rules/Info:
   All test grids setup before hand are available to be tested here (using the seed and game id links provided in the txt files):
     https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html 
 
-  An overview of some important variable values:
+### An overview of some important variable values:
   
   The grid is a 2D numpy array where:
       
@@ -61,7 +61,7 @@ General Rules/Info:
 In order to create yout own test cases, you can create a txt file in the [grids](grids/) folder, from which the program will dynamically read it in and let you run as a test.
 
 The txt file follows the following format:   
-- For the array of {} fill in using the numbers from the [key for the grid array](#baseline-rules-for-the-game)  provided above 
+- For the array of {} fill in using the numbers from the [key for the grid array](#an-overview-of-some-important-variable-values)  provided above 
 - For the seed link, right click on link to puzzle by seed and copy
 - For the game id link, right click on link to puzzle by game ID and copy
 - Links for the seeds and game id can be found [here](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/lightup.html)
