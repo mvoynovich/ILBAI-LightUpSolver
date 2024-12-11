@@ -64,15 +64,16 @@ def load_grid_from_file(filename):
         lines = file.readlines()
         
         # Store the lines that contain the grid
+        solver_link = lines[0][6:]
         lines = lines[3:-1]
-        
+       
         for line in lines:
             # Convert each line to a list of integers
             row = list(map(int, line.strip().split(',')))
             grid.append(row)
     
     # Convert grid to a numpy array
-    return np.array(grid)
+    return np.array(grid), solver_link
 
 def main():
     selected_file = print_available_grids()
@@ -81,7 +82,7 @@ def main():
         return "Error: Make sure you input a valid filename"
     
     grid_file_path = os.path.join('grids', selected_file)
-    grid = load_grid_from_file(grid_file_path)
+    grid, solver_link = load_grid_from_file(grid_file_path)
     
     print(f"\nGrid loaded from {selected_file}:")
     print(grid)
@@ -92,6 +93,10 @@ def main():
 
     solver = LightUpSolver(grid)
     solver.solve()
+
+    print("\nVisit the following link to review solution with Tatham's solver:")
+    print(solver_link)
+
 
 if __name__ == "__main__":
     main()
