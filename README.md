@@ -58,7 +58,7 @@ If you wish to uninstall these packages later, please run ```pip uninstall z3-so
 4. You can verify the correctness of the solution through the online link provided at the end of the program
 
 ## Creating your own test cases
-In order to create yout own test cases, you can create a txt file in the [grids](grids/) folder, from which the program will dynamically read it in and let you run as a test.
+In order to create your own test cases, you can create a txt file in the [grids](grids/) folder, from which the program will dynamically read it in and let you run as a test.
 
 The txt file follows the following format:   
 - For the array of {} fill in using the numbers from the [key for the grid array](#an-overview-of-some-important-variable-values)  provided above 
